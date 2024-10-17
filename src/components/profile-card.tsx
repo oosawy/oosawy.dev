@@ -23,7 +23,7 @@ export function ProfileCard() {
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-foreground"
             >
-              <XIcon className="w-6 h-6" />
+              <GitHubIcon className="w-6 h-6" />
               <span className="sr-only">GitHub</span>
             </a>
             <a
@@ -32,7 +32,7 @@ export function ProfileCard() {
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-foreground"
             >
-              <GitHubIcon className="w-6 h-6" />
+              <XIcon className="w-6 h-6" />
               <span className="sr-only">X</span>
             </a>
             <a
