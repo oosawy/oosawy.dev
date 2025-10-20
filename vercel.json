@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/to/:path*",
+      "destination": "https://link.oosawy.dev/:path*"
+    }
+  ]
+}
