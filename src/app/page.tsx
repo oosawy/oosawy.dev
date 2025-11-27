@@ -13,16 +13,16 @@ export default function Home() {
 
         <div className="col-span-2 row-span-1 row-start-3 col-start-1 lg:row-start-1 lg:col-span-3">
           <ZennArticleCard
-            emoji={<HundredPointsIcon />}
+            emoji={<HourglassNotDoneIcon />}
             title={`Next.jsでFirebase Authに起因する数秒間の読み込み画面を倒して快適なユーザー体験を勝ち取る`}
-            href="https://zenn.dev/yutaosawa/articles/9e978d12793a56"
+            href="https://zenn.dev/toridori/articles/31a573e5755303"
             likes={21}
           />
         </div>
 
         <div className="col-span-1 row-span-1 row-start-4 md:col-start-2 lg:col-span-2 lg:row-start-2 lg:col-start-1">
           <ZennArticleCard
-            emoji={<HourglassNotDoneIcon />}
+            emoji={<HundredPointsIcon />}
             title={`なぜ "use client" ディレクティブは優れた API なのか`}
             href="https://zenn.dev/yutaosawa/articles/9e978d12793a56"
             likes={121}
