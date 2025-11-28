@@ -112,11 +112,20 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 }
 
+@theme {
+  --text-card-title: clamp(0.875rem, 0.7147rem + 0.641vw, 1.125rem);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  div,
+  span {
+    @apply cursor-default;
   }
 }

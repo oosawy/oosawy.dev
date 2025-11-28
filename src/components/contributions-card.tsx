@@ -1,18 +1,5 @@
 import { BookMarkedIcon } from 'lucide-react'
-
-type LanguageInfo = {
-  name: string
-  color: string
-}
-
-const Languages = {
-  typescript: {
-    name: 'TypeScript',
-    color: '#3178c6',
-  },
-} as const satisfies Record<string, LanguageInfo>
-
-type Language = keyof typeof Languages
+import { Language, LanguageBadge } from './language-badge'
 
 type Contribution = {
   repo: string
@@ -31,10 +18,10 @@ export default function ContributionsCard(props: ContributionsCardProps) {
     `https://github.com/${repo}/commits?author=oosawy`
 
   return (
-    <div className="h-full bg-white rounded-lg overflow-y-auto shadow-sm">
+    <div className="h-full bg-white rounded-lg overflow-y-auto shadow-sm pb-4">
       {/* Header */}
       <div className="px-4 py-2 border-b border-gray-200">
-        <h2 className="text-gray-800 font-semibold text-lg leading-relaxed">
+        <h2 className="text-gray-800 font-semibold md:text-lg leading-relaxed">
           Contributions
         </h2>
       </div>
@@ -67,10 +54,7 @@ export default function ContributionsCard(props: ContributionsCardProps) {
             {/* Languages */}
             {c.language && (
               <div className="flex flex-wrap gap-2">
-                <LanguageBadge
-                  name={Languages[c.language].name}
-                  color={Languages[c.language].color}
-                />
+                <LanguageBadge lang={c.language} />
               </div>
             )}
           </div>
@@ -79,13 +63,3 @@ export default function ContributionsCard(props: ContributionsCardProps) {
     </div>
   )
 }
-
-const LanguageBadge = (props: { name: string; color: string }) => (
-  <div className="flex items-center gap-0.5">
-    <span
-      className="w-3 h-3 rounded-full"
-      style={{ backgroundColor: props.color }}
-    ></span>
-    <span className="text-xs text-muted-foreground">{props.name}</span>
-  </div>
-)
