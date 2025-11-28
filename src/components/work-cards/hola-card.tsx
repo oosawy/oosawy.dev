@@ -31,7 +31,7 @@ export function HolaCard() {
         <div className="flex items-center gap-1 md:gap-2 flex-wrap">
           <TagChip>CLI</TagChip>
           <TagChip>Network</TagChip>
-          <TagChip>mdns</TagChip>
+          <TagChip>mDNS</TagChip>
           <div className="grow"></div>
 <LanguageBadge lang="golang" />
         </div>

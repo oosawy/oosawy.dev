@@ -3,7 +3,6 @@ import ContributionsCard from '~/components/contributions-card'
 import { HourglassNotDoneIcon, HundredPointsIcon } from '~/components/icons'
 import { ProfileCard } from '~/components/profile-card'
 import { HolaCard } from '~/components/work-cards/hola-card'
-import { VectrixCard } from '~/components/work-cards/vectrix'
 
 export default function Home() {
   return (
