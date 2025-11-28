@@ -1,3 +1,4 @@
+import { preload } from 'react-dom'
 import ZennArticleCard from '~/components/article-card'
 import ContributionsCard from '~/components/contributions-card'
 import { HourglassNotDoneIcon, HundredPointsIcon } from '~/components/icons'
@@ -6,6 +7,8 @@ import { HolaCard } from '~/components/work-cards/hola-card'
 import { VectrixCard } from '~/components/work-cards/vectrix'
 
 export default function Home() {
+  preload("/avatar.jpg")
+
   return (
     <main className="min-h-screen bg-secondary flex items-center justify-center p-6 md:p-8">
       <div className="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
