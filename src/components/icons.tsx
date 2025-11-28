@@ -88,3 +88,19 @@ export const GitHubIcon = (props: { className: string }) => (
     />
   </svg>
 )
+
+export const CubeIcon = (props: { className: string }) => (
+  <svg  xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+      fill="none"
+  stroke="currentColor"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+      <path d="M12 12 3.3 7v10l8.7 5" />
+  <path d="M20.7 7v10L12 22V12zL12 2 3.3 7" />
+</svg>
+
+)
