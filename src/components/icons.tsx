@@ -90,17 +90,36 @@ export const GitHubIcon = (props: { className: string }) => (
 )
 
 export const CubeIcon = (props: { className: string }) => (
-  <svg  xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-      fill="none"
-  stroke="currentColor"
-  strokeLinecap="round"
-  strokeLinejoin="round"
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     width="1em"
     height="1em"
     {...props}
   >
-      <path d="M12 12 3.3 7v10l8.7 5" />
-  <path d="M20.7 7v10L12 22V12zL12 2 3.3 7" />
-</svg>
+    <path d="M12 12 3.3 7v10l8.7 5" />
+    <path d="M20.7 7v10L12 22V12zL12 2 3.3 7" />
+  </svg>
+)
 
+export const ThoughtBalloonIcon = () => (
+  <svg
+    viewBox="0 0 36 36"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    role="img"
+    width="1em"
+    height="1em"
+  >
+    <path
+      fill="#BDDDF4"
+      d="M35 12a7 7 0 0 0-7-7c-1.167 0-2.265.29-3.232.794c-2.082-2.827-5.425-4.669-9.205-4.669c-5.132 0-9.475 3.38-10.923 8.036A5.997 5.997 0 0 0 0 15a5.996 5.996 0 0 0 5.021 5.913C5.237 24.862 8.498 28 12.5 28c2.176 0 4.13-.933 5.5-2.413A7.472 7.472 0 0 0 23.5 28c4.143 0 7.5-3.357 7.5-7.5a7.5 7.5 0 0 0-.289-2.045A7.001 7.001 0 0 0 35 12z"
+    ></path>
+    <circle fill="#BDDDF4" cx="4" cy="31" r="3"></circle>
+  </svg>
 )
