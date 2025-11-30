@@ -4,10 +4,11 @@ import ContributionsCard from '~/components/contributions-card'
 import { HourglassNotDoneIcon, HundredPointsIcon } from '~/components/icons'
 import { ProfileCard } from '~/components/profile-card'
 import { HolaCard } from '~/components/work-cards/hola-card'
-import { VectrixCard } from '~/components/work-cards/vectrix'
+import { VectrixCard } from '~/components/work-cards/vectrix-card'
+import { WarpCard } from '~/components/work-cards/warp-card'
 
 export default function Home() {
-  preload("/avatar.jpg")
+  preload('/avatar.jpg')
 
   return (
     <main className="min-h-screen bg-secondary flex items-center justify-center p-6 md:p-8">
@@ -25,7 +26,7 @@ export default function Home() {
           />
         </div>
 
-        <div className='row-span-1 col-span-1 md:row-start-3 lg:col-span-2 lg:row-start-2 lg:col-start-1'>
+        <div className="row-span-1 col-span-1 md:row-start-3 lg:col-span-2 lg:row-start-2 lg:col-start-1">
           <ZennArticleCard
             emoji={<HundredPointsIcon />}
             title={`なぜ "use client" ディレクティブは優れた API なのか`}
@@ -38,8 +39,12 @@ export default function Home() {
           <HolaCard />
         </div>
 
-        <div className="hidden lg:block col-span-1 row-span-1 lg:col-span-1 lg:row-start-3 lg:col-start-3">
+        <div className="col-span-1 row-span-1 md:row-start-4 lg:col-span-1 lg:row-start-3 lg:col-start-3">
           <VectrixCard />
+        </div>
+
+        <div className="col-span-1 row-span-1 md:row-start-4 lg:col-span-1 lg:row-start-3 lg:col-start-6">
+          <WarpCard />
         </div>
 
         <div className="col-span-2 row-span-2 sm:col-span-1 md:col-span-2 md:col-start-3 lg:row-start-1 lg:col-start-5">
