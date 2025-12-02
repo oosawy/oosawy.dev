@@ -9,7 +9,7 @@ import { VectrixCard } from '~/components/work-cards/vectrix-card'
 import { WarpCard } from '~/components/work-cards/warp-card'
 
 export default function Home() {
-  preload('/avatar.jpg')
+  preload('/avatar.jpg', { as: 'image' })
 
   return (
     <main className="min-h-screen bg-secondary flex items-center justify-center p-6 md:p-8">
