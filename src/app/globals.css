@@ -124,8 +124,7 @@
     @apply bg-background text-foreground;
   }
 
-  div,
-  span {
-    @apply cursor-default;
+  body {
+    cursor: default;
   }
 }
