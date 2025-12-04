@@ -1,5 +1,6 @@
 import { Heart } from 'lucide-react'
 import { type ReactNode } from 'react'
+import { cn } from '~/lib/utils'
 
 type ArticleCardProps = {
   emoji: ReactNode
@@ -11,14 +12,16 @@ type ArticleCardProps = {
 
 export default function ZennArticleCard(props: ArticleCardProps) {
   return (
-    <div className="flex flex-col relative w-full h-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
+    <div className={cn("grid grid-rows-[auto,auto] relative w-full h-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow",
+      "in-data-article-subgrid:grid-rows-subgrid in-data-article-subgrid:row-span-2"
+    )}>
       {/* Header Section */}
-      <div className="grow bg-[#cfe5ff] p-4 flex justify-center items-center min-h-16 @container-[size]">
-        <div className="absolute top-3 left-3 px-1 py-1/3 sm:px-2 sm:py-1 rounded-full bg-[#3ea8ff] text-white text-[10px] sm:text-xs font-semibold">
+      <div className="bg-[#cfe5ff] p-4 min-h-16 flex flex-col items-center justify-center relative">
+        <div className="absolute top-3 left-2 px-1 py-1/3 sm:px-2 sm:py-1 rounded-full bg-[#3ea8ff] text-white text-[10px] sm:text-xs font-semibold">
           ARTICLE
         </div>
 
-        <div className="text-[max(100cqh,36px)]">{props.emoji}</div>
+        <div className={cn("text-[32px]", "in-data-article-subgrid:text-[48px] in-data-article-subgrid:m-2")}>{props.emoji}</div>
       </div>
 
       {/* Content Section */}

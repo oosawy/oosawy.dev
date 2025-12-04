@@ -9,7 +9,7 @@ export function ProfileCard() {
         <Avatar className="size-32 lg:size-20">
           <AvatarImage src="/avatar.jpg" alt="Profile Picture" />
         </Avatar>
-        <div className="flex flex-col items-center sm:contents lg:flex lg:flex-col lg:items-center lg:justify-center">
+        <div className="flex flex-col items-center lg:flex lg:flex-col lg:items-center lg:justify-center">
           <h2 className="mb-2 lg:mb-0.5 text-2xl font-bold dark:text-white">
             Yuta Osawa
           </h2>

@@ -1,4 +1,4 @@
-import { ThoughtBalloonIcon } from '../icons'
+import { Twemoji } from '../twemoji'
 
 export function ThoughtCard() {
   return (
@@ -6,7 +6,7 @@ export function ThoughtCard() {
       <div className="w-full aspect-4/3 grid place-items-center @container-[size]">
         <a target="_blank" title="work in progress">
           <span className="text-[50cqh]">
-            <ThoughtBalloonIcon />
+            <Twemoji emoji="💭" />
           </span>
         </a>
       </div>
