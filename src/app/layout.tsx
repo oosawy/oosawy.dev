@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { BreakpointIndicator } from '~/components/breakpoint-indicator'
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <BreakpointIndicator />
 
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
